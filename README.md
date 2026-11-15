@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/denvora-biz-skills-logo.png" alt="Denvora Biz Skills" width="380" />
+</p>
+
 <div align="center">
 
 # denvora-biz-skills
