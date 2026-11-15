@@ -190,7 +190,8 @@ denvora-biz-skills/
 ├─ dist/                          # Standalone .skill bundles for Claude Web/Desktop
 ├─ scripts/                       # Verification, packaging, and validation utilities
 ├─ README.md                      # Primary bilingual documentation
-├─ CONTRIBUTING.md                # Community contribution guide
+├─ CONTRIBUTING.md                # Community contribution guidelines
+├─ CODE_OF_CONDUCT.md             # Contributor Covenant Code of Conduct
 ├─ AGENTS.md                      # Agent architecture rules & safety constraints
 ├─ CHANGELOG.md                   # Release version history
 ├─ SECURITY.md                    # Vulnerability reporting guidelines
@@ -210,6 +211,7 @@ denvora-biz-skills/
 ## Related Documentation & Contributing
 
 - **Contributing Guide:** [`CONTRIBUTING.md`](CONTRIBUTING.md)
+- **Code of Conduct:** [`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md)
 - **Agent Architecture Rules:** [`AGENTS.md`](AGENTS.md)
 - **Release Changelog:** [`CHANGELOG.md`](CHANGELOG.md)
 - **Security Policy:** [`SECURITY.md`](SECURITY.md)
@@ -416,13 +418,14 @@ Cukup ajak asisten AI Anda berdiskusi secara wajar dalam bahasa Indonesia. Asist
 
 ---
 
-## Dokumentasi Terkait & Berkontribusi
+## Dokumentasi Terkait & Panduan Berkontribusi
 
-- **Panduan Kontribusi:** [`CONTRIBUTING.md`](CONTRIBUTING.md)
+- **Panduan Berkontribusi (Contributing):** [`CONTRIBUTING.md`](CONTRIBUTING.md)
+- **Kode Etik Komunitas (Code of Conduct):** [`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md)
 - **Aturan Integritas Agent:** [`AGENTS.md`](AGENTS.md)
 - **Riwayat Perubahan Versi:** [`CHANGELOG.md`](CHANGELOG.md)
-- **Kebijakan Keamanan:** [`SECURITY.md`](SECURITY.md)
-- **Lisensi:** [`LICENSE`](LICENSE) (MIT)
+- **Kebijakan Keamanan (Security):** [`SECURITY.md`](SECURITY.md)
+- **Lisensi Terbuka:** [`LICENSE`](LICENSE) (MIT)
 
 ---
 
