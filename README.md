@@ -104,3 +104,7 @@ Zero invented prices, prompt injection isolation, and safe draft boundaries.
 ## Compatibility & Installation
 
 Supported on Antigravity, Claude, ChatGPT, and Cursor.
+
+## How to Use
+
+Natural language prompts in English and Indonesian.
