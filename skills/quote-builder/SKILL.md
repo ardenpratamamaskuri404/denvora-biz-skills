@@ -24,7 +24,7 @@ Produce a quote the user can review, adjust, and send. A good quote protects bot
 1. **Gather inputs.** From the brief and the conversation: scope, deliverables, deadline. From the user: currency, rates or fixed prices, payment preferences, revision policy, validity period. If there's no brief, offer to use `client-brief` first, or work from the user's description.
 2. **Ask for missing numbers once, briefly.** If the user doesn't want to answer, continue with placeholders.
 3. **Break work into items** (phases or deliverables). If the user wants effort ranges, propose them as *estimates* and ask them to adjust.
-4. **Compute** only from the user's numbers. Show the formula. Re-add the totals.
+4. **Compute and verify math.** Always display full arithmetic breakdown (units × rate = item total, sum = subtotal). Show the formula. Re-add the totals.
 5. **Write the quote** (format below). Mark every placeholder.
 6. **Add protection:** exclusions, revision limit (the user's number or a placeholder), change-request process, client responsibilities (content, feedback, approvals), assumptions, validity.
 7. **Offer options** (packages) only if the user asks, and compute each from the user's numbers.
