@@ -33,4 +33,3 @@ First public beta release of `denvora-biz-skills`.
   - Added Bento-style Product Overview showcase (`assets/product-overview.png`).
   - Added comprehensive bilingual documentation (English & Bahasa Indonesia) in `README.md`.
   - Added agent developer instructions in `AGENTS.md` and contributor guidelines in `CONTRIBUTING.md`.
-
