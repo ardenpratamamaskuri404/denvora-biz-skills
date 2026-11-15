@@ -23,7 +23,7 @@ Help the user launch without forgetting the boring-but-important parts. A good c
 2. **Select areas** from `references/master-checklist.md` that apply. Drop the rest.
 3. **Write the checklist** with priorities and reasons.
 4. **Split by time:** *Before launch*, *Launch day*, *First week*.
-5. **List open questions** and unconfirmed items.
+5. **Quarantine unconfirmed items.** Mark and group unverified items in a dedicated section.
 6. **Summarize the blockers** at the top so the user sees them first.
 
 ## Output format
