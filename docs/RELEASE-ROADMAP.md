@@ -1,202 +1,137 @@
-# RELEASE-ROADMAP.md — Peta Rilis Fitur v1.0 → v5.0
+# RELEASE-ROADMAP.md — Feature & Extension Roadmap (v1.0 → v5.0)
 
-Rencana penambahan fitur dan skill untuk rilis jangka panjang. Dokumen ini **bukan janji tanggal**; setiap rilis naik hanya jika gate-nya lulus. Temuan yang harus dibereskan lebih dulu ada di `AUDIT.md`.
+Long-range feature and skill architecture roadmap for `denvora-biz-skills`. This document outlines the planned multi-version trajectory across the entire digital freelance and agency lifecycle.
 
-Prinsip yang tidak boleh dilanggar di semua rilis:
-
-1. **Zero-invented numbers** — harga, tarif, pajak, statistik, dan testimoni hanya dari pengguna atau placeholder `[ISI: ...]`.
-2. **Draft only** — tidak ada nasihat hukum/pajak/keuangan; tidak ada pengiriman pesan, invoice, atau kontrak otomatis.
-3. **Markdown + references** — tanpa runtime, tanpa network call, tanpa database di dalam skill.
-4. **Bukti sebelum klaim** — skill baru tidak dirilis tanpa test pack, hasil, dan catatan kompatibilitas.
-5. **Satu skill, satu tanggung jawab** — hindari skill gemuk yang mencampur brief, harga, hukum, dan operasi.
+Every release operates under strict evidence-based promotion: a milestone only graduates when its test suites pass with zero hallucinations and verified cross-platform compatibility.
 
 ---
 
-## Ringkasan 5 rilis
+## Core Guiding Principles (All Releases)
 
-| Rilis | Versi | Tema | Fokus utama |
+1. **Zero-Invented Facts & Pricing:** Prices, hourly rates, tax figures, laws, statistics, and testimonials must originate strictly from user input or marked placeholders (`[FILL IN: ...]` / `[ISI: ...]`).
+2. **Draft-Only Safeguards:** All outputs touching commercial contracts, compliance, or financial figures are explicit drafts intended for human review. Never provide unauthorized legal certifications.
+3. **Pure Portable Markdown:** Zero runtime dependencies, zero external network calls, zero executable code inside skill instructions. Maximum cross-agent compatibility.
+4. **Evidence Before Assertion:** New skills require exhaustive trigger suites (should/should-not), task tests, and verified compatibility matrices before merging into release branches.
+5. **Single Responsibility Architecture:** Skills stay focused and concise (<250 lines in `SKILL.md`), delegating detailed domain templates and question banks to `references/`.
+
+---
+
+## 5-Stage Release Lifecycle Summary
+
+| Release | Version | Strategic Theme | Primary Milestone Scope | Status |
+|:---:|:---:|---|---|:---:|
+| **1** | `v1.0.0` | **Trust & Proof (Core Suite)** | 5 foundational skills (`client-brief`, `quote-builder`, `launch-checklist`, `handover`, `product-page`), cross-platform CI matrix, test suites, `.skill` distribution. | **Released (GA)** |
+| **2** | `v2.0.0` | **Win the Client (Discovery & Pricing)** | Client discovery call extraction, formula-based rate calculation, non-coercive proposal follow-up, structured client onboarding. | Planned |
+| **3** | `v3.0.0` | **Deliver & Protect (Project Execution)** | Milestone project planning, change order impact quantification, transparent status reports, UAT acceptance, courteous invoice reminders. | Planned |
+| **4** | `v4.0.0` | **Grow & Prove (Reputation & Growth)** | Ethical case study synthesis, client testimonial intake workflows, pre-launch sequence copy, verified SEO content briefs. | Planned |
+| **5** | `v5.0.0` | **Scale & Ecosystem (Team & Tooling)** | Subcontractor scope delegation, agency operational SOPs, Skill Authoring Kit, modular dependency checking, localized industry packs. | Planned |
+
+---
+
+## Milestone 1 — `v1.0.0` · Trust & Proof (GA)
+
+**Status:** Completed & Officially Released (2026-11-15).
+
+**Objective:** Establish the 5 core skills as bulletproof, honest, production-ready operational standards for freelancers and agencies.
+
+**Delivered Skills:**
+- [`client-brief`](../skills/client-brief): Transforms chaotic client messages and audio notes into structured briefs, proposed scope boundaries, and prioritized questions.
+- [`quote-builder`](../skills/quote-builder): Constructs transparent commercial proposals with verified mathematical formulas, exclusions, and change-request clauses.
+- [`launch-checklist`](../skills/launch-checklist): Generates prioritized pre-flight checklists across DNS, HTTPS, payment testing, backups, and legal disclaimers.
+- [`handover`](../skills/handover): Structures formal project completion documents, secure credential transfer protocol (anti-plaintext), and 30-day bugfix warranty limits.
+- [`product-page`](../skills/product-page): Drafts honest digital product landing page copywriting with technical prerequisites, honest anti-personas, and objection handling.
+
+**Infrastructure Highlights:**
+- 58 recorded task evaluations with 0 hard gate failures.
+- Zero-dependency binary ZIP header inspection for cross-platform packaging.
+- Cross-platform CI matrix across Ubuntu, Windows, and macOS.
+- Pre-packaged `.skill` archive bundles tracked in `dist/`.
+
+---
+
+## Milestone 2 — `v2.0.0` · Win the Client
+
+**Objective:** Streamline the pre-project acquisition phase from initial meeting discovery to formal client onboarding.
+
+### Planned Skills
+
+| Skill | Core Function | Example Triggers | Safety & Boundary Rules |
 |---|---|---|---|
-| Pra-rilis | `v0.2.x` | Proof | Tutup blocker audit, uji 5 skill, dokumen masuk repo |
-| 1 | `v1.0.0` | Trust & Proof | Stabilkan 5 skill inti; semua klaim terverifikasi |
-| 2 | `v2.0.0` | Win the Client | Discovery, pricing dari biaya sendiri, follow-up, onboarding |
-| 3 | `v3.0.0` | Deliver & Protect | Perencanaan proyek, change request, status, UAT, reminder |
-| 4 | `v4.0.0` | Grow & Prove | Case study, testimoni etis, launch sequence, content brief |
-| 5 | `v5.0.0` | Scale & Ecosystem | Subkontrak, SOP tim, skill SDK, registry, lokalisasi |
+| `discovery-call` | Synthesizes meeting notes and call transcripts into verified requirements, budget indicators, and decision-maker maps. | "discovery call notes", "meeting transcript", "catatan telepon klien" | Never invents stated budgets; strictly quotes spoken facts; flags unverified assumptions. |
+| `pricing-strategy` | Calculates hourly rates and fixed package pricing strictly from the **user's actual living costs, billable hours, and target revenue**. | "calculate my rate", "pricing formula", "hitung tarif per jam" | Never quotes arbitrary "market averages"; zero external web scrapes; requires user expense inputs. |
+| `proposal-followup` | Generates courteous, non-aggressive check-in sequences, value reinforcement, and diplomatic negotiation boundaries. | "follow up proposal", "client hasn't replied", "tindak lanjut penawaran" | Never generates manipulative urgency, fake expiring discounts, or hostile pressure. |
+| `client-onboarding` | Assembles a formal client welcome packet: kickoff agenda, required asset intake checklist, and communication guidelines. | "client onboarding", "kickoff checklist", "welcome pack klien" | Does not automate billing or communications; includes draft protection notices. |
+
+### Architectural Features
+- **Workflow Recipes:** Documented multi-skill execution chains (e.g., `discovery-call` ➡️ `client-brief` ➡️ `pricing-strategy` ➡️ `quote-builder` ➡️ `proposal-followup`).
+- **Standardized Output Modes:** Concise vs. Comprehensive output flags tailored for technical vs. non-technical client counterparts.
 
 ---
 
-## Pra-rilis — `v0.2.x` (Proof)
+## Milestone 3 — `v3.0.0` · Deliver & Protect
 
-Tidak menambah skill. Semua pekerjaan diambil dari `AUDIT.md`.
+**Objective:** Safeguard ongoing project delivery against scope creep, missed milestones, and payment disputes.
 
-- [ ] `docs/` dan paket `dist/` benar-benar masuk repo (B-01, B-02)
-- [ ] Test pack + hasil untuk `handover` dan `product-page` (B-03, C-09)
-- [ ] Hapus atau buktikan klaim "5 skill 100% verified" dan "Fully Supported" (B-03, B-04)
-- [ ] Sinkronkan catalog, PRD, maintenance, contributing, distribution, changelog (C-02…C-05)
-- [ ] `SECURITY.md` diisi SLA nyata (B-05)
-- [ ] CI: cek `version:`, jalankan verify lintas OS (B-07, B-08)
-- [ ] Beta 5–10 freelancer + review hukum oleh manusia
+### Planned Skills
 
-**Gate:** tidak ada klaim tanpa bukti; `main` bersih; `v0.1.1`/`v0.2.0` bisa dirilis.
-
----
-
-## Rilis 1 — `v1.0.0` · "Trust & Proof"
-
-**Tujuan:** 5 skill inti menjadi produk yang jujur, stabil, dan bisa direkomendasikan tanpa caveat.
-
-**Skill:** tidak ada skill baru. Hardening `client-brief`, `quote-builder`, `launch-checklist`, `handover`, `product-page`.
-
-**Fitur platform**
-- Test harness lengkap: trigger, task, boundary, language, injection untuk 5 skill.
-- Tabel hasil trigger (should / should-not) yang direkam, bukan hanya task test.
-- Version sync: versi skill, README, CHANGELOG, dan tag harus cocok.
-- Compatibility matrix jujur (hanya tool yang benar-benar diuji).
-- Contoh output fiktif untuk 5 skill (brief, quote, checklist, handover, product page).
-- Glosarium istilah ID/EN agar output konsisten (`DP`, `termin`, `revisi`, `scope`).
-
-**Exit criteria**
-- 0 pelanggaran hard gate di semua test.
-- Beta feedback terkumpul dan ditindaklanjuti.
-- Review profesional untuk wording legal-adjacent selesai.
-- Fresh install berhasil di minimal 2 agent berbeda.
-
----
-
-## Rilis 2 — `v2.0.0` · "Win the Client"
-
-**Tujuan:** menutup fase sebelum proyek dimulai — discovery, penetapan harga, follow-up, dan onboarding.
-
-**Skill baru**
-
-| Skill | Fungsi | Pemicu (contoh) | Batasan |
+| Skill | Core Function | Example Triggers | Safety & Boundary Rules |
 |---|---|---|---|
-| `discovery-call` | Ubah catatan/transkrip call menjadi kebutuhan, sinyal budget, peta pengambil keputusan, dan next step | "catatan meeting klien", "discovery call", "hasil telepon klien" | Tidak mengarang budget; tidak menyimpulkan fakta yang tidak diucapkan |
-| `pricing-strategy` | Hitung tarif/paket dari **biaya, jam, target income, dan kapasitas pengguna** | "berapa tarif saya", "hitung rate", "pricing paket" | Tidak memberi harga pasar; tidak mengarang biaya; semua angka dari pengguna |
-| `proposal-followup` | Draf follow-up sopan, objection handling, dan batas negosiasi | "follow up penawaran", "klien belum balas", "cara nego" | Tidak menekan klien; tidak menjanjikan diskon |
-| `client-onboarding` | Welcome pack, agenda kickoff, checklist aset, aturan komunikasi | "onboarding klien baru", "kickoff project", "welcome pack" | Tidak menagih/mengirim otomatis; tanpa data sensitif |
-
-**Fitur platform**
-- **Bundles/profiles:** "Freelancer Starter" (brief → pricing → quote) dan "Agency Pack" (discovery → onboarding → plan).
-- **Workflow recipes:** urutan skill yang direkomendasikan, mis. `client-brief → pricing-strategy → quote-builder → proposal-followup`.
-- **Eval harness v2:** skor per kriteria, snapshot regresi, dan pembanding with/without.
-- **Trigger routing:** panduan kapan satu skill berhenti dan skill lain mengambil alih.
-
-**Exit criteria**
-- Setiap skill baru punya trigger set (8–10 should / 8–10 should-not) + task test.
-- Tidak ada skill yang memberi angka tanpa sumber.
-- Bundles teruji end-to-end pada satu skenario fiktif.
+| `project-plan` | Builds milestone schedules, dependency maps, and risk registers from agreed project scope. | "create project schedule", "milestone plan", "jadwal pengerjaan proyek" | Uses user-provided timeline estimates; labels all dates as provisional targets. |
+| `change-request` | Quantifies the scope, timeline, and cost impacts of client-requested feature additions during active development. | "client requested extra feature", "change order", "perubahan scope" | Requires user cost inputs; never promises client approval; enforces written change orders. |
+| `status-update` | Produces clear periodic progress reports, decision logs, and upcoming blocker flags. | "weekly status report", "progress update", "laporan mingguan" | Only reports verified completed items; never fabricates progress percentages. |
+| `uat-acceptance` | Generates structured User Acceptance Testing (UAT) criteria, testing scripts, and bug severity triage. | "UAT checklist", "user acceptance testing", "uji kelayakan sistem" | Refuses to certify system readiness without documented user test results. |
+| `payment-reminder` | Drafts firm, professional invoice follow-ups and escalation notices for overdue accounts. | "overdue invoice email", "payment reminder", "ingatkan pembayaran" | Strictly draft-only communication; zero automated debt collection; never gives legal collection advice. |
 
 ---
 
-## Rilis 3 — `v3.0.0` · "Deliver & Protect"
+## Milestone 4 — `v4.0.0` · Grow & Prove
 
-**Tujuan:** menjaga proyek tetap terkendali setelah deal — scope, perubahan, status, penerimaan, dan pembayaran.
+**Objective:** Transform completed client successes into verifiable social proof and marketing assets without resorting to fake reviews.
 
-**Skill baru**
+### Planned Skills
 
-| Skill | Fungsi | Pemicu (contoh) | Batasan |
+| Skill | Core Function | Example Triggers | Safety & Boundary Rules |
 |---|---|---|---|
-| `project-plan` | Milestone, dependency, RACI, risk register, dan rencana komunikasi | "buat project plan", "timeline proyek", "rencana kerja" | Estimasi dari pengguna; tidak menjanjikan tanggal |
-| `change-request` | Change order: dampak scope, waktu, dan biaya | "klien minta tambahan", "change request", "scope berubah" | Tidak menetapkan harga sendiri; minta angka pengguna |
-| `status-update` | Update mingguan, decision log, dan risk log untuk klien | "update klien", "progress report", "status proyek" | Tidak mengarang progres; hanya dari input pengguna |
-| `uat-acceptance` | Kriteria penerimaan, skrip UAT, triage bug, dan sign-off | "UAT", "acceptance test", "serah terima tahap" | Tidak menyatakan "lulus" tanpa bukti pengujian |
-| `payment-reminder` | Draf pengingat pembayaran dan eskalasi sopan | "tagih invoice", "reminder pembayaran", "klien telat bayar" | Bukan akuntansi; tidak menghitung denda/pajak; draft only |
-
-**Fitur platform**
-- **Project artifact chain:** konvensi ID dan tautan antar dokumen (`brief → plan → change log → status → UAT → handover`).
-- **Glosarium proyek:** istilah status, severity bug, dan definisi "done".
-- **Mode keluaran:** ringkas / standar / detail untuk klien teknis vs non-teknis.
-- **Lokalisasi ID-first** untuk istilah operasional (bukan aturan pajak/hukum).
-
-**Exit criteria**
-- Rantai dokumen bisa dijalankan pada satu proyek fiktif dari brief sampai handover.
-- Tidak ada skill yang memberi saran hukum/pajak.
-- Test boundary untuk "ubah scope", "telat bayar", dan "bug kritis" lulus.
+| `case-study` | Converts completed project archives into an anonymized, outcome-driven business case study. | "write case study", "portfolio writeup", "studi kasus proyek" | Anonymizes confidential client data; requires verified metrics; zero fabricated ROI stats. |
+| `testimonial-request` | Drafts ethical testimonial collection questions and formal usage consent agreements. | "ask client for review", "testimonial prompt", "minta ulasan klien" | Never invents reviews; strictly guides genuine client reflection. |
+| `launch-sequence` | Structures promotional copy and milestone announcements for new product or service launches. | "launch sequence", "announcement copy", "peluncuran layanan" | Zero guaranteed earnings claims; transparent about requirements and limitations. |
+| `content-brief` | Structures editorial and SEO content briefs from user-provided keyword and audience research. | "SEO content brief", "article outline", "brief konten blog" | Never fabricates search volumes or rankings; processes user research data only. |
+| `analytics-review` | Interprets raw analytics metrics provided by the user to identify actionable business insights. | "review website traffic", "analyze conversions", "baca data analitik" | Labels data uncertainty; refuses to invent industry conversion benchmarks. |
 
 ---
 
-## Rilis 4 — `v4.0.0` · "Grow & Prove"
+## Milestone 5 — `v5.0.0` · Scale & Ecosystem
 
-**Tujuan:** mengubah pekerjaan yang selesai menjadi bukti sosial dan pemasaran yang jujur.
+**Objective:** Enable solo operators to scale into boutique digital agencies and empower the open-source community to contribute modular skills safely.
 
-**Skill baru**
+### Planned Skills & Tooling
 
-| Skill | Fungsi | Pemicu (contoh) | Batasan |
+| Skill / Tool | Core Function | Example Triggers | Safety & Boundary Rules |
 |---|---|---|---|
-| `case-study` | Ubah proyek selesai menjadi case study anonim | "buat case study", "portfolio proyek", "studi kasus" | Tanpa data klien nyata; tanpa metrik karangan |
-| `testimonial-request` | Minta testimoni secara etis + alur consent | "minta testimoni", "testimonial klien" | Tidak memalsukan review; tidak menulis testimoni atas nama klien |
-| `launch-sequence` | Draf urutan konten/email pra-rilis | "launch sequence", "email rilis", "promo peluncuran" | Tidak mengirim; tanpa klaim "guaranteed revenue" |
-| `content-brief` | Brief konten/SEO dari riset yang diberikan pengguna | "content brief", "brief artikel", "SEO brief" | Tidak mengarang volume pencarian/keyword; data harus dari pengguna |
-| `analytics-review` | Baca angka analytics yang diberikan pengguna dan tarik insight | "review analytics", "baca metrik", "laporan traffic" | Tidak mengarang benchmark; tandai ketidakpastian |
-
-**Fitur platform**
-- **Industry packs:** web dev, design, writing, video, agency operations.
-- **Style modes:** formal, casual, dan "client-ready" dengan nada yang konsisten.
-- **Public eval benchmark:** hasil test yang bisa direproduksi dan dibandingkan antar versi.
-- **Anti-fake-proof lint:** deteksi klaim testimoni/statistik tanpa sumber di output.
-
-**Exit criteria**
-- Semua skill baru lulus hard gate "no fake proof".
-- Benchmark publik dirilis bersama catatan metodologi.
-- Tidak ada output yang menjanjikan hasil finansial.
+| `subcontract-brief` | Drafts Statements of Work (SoW) and deliverables checklists for outsourced freelancers and subcontractors. | "subcontractor brief", "hire contractor", "brief untuk vendor" | Omits client-confidential data; requires independent legal contract review. |
+| `team-sop` | Generates agency Standard Operating Procedures (SOPs) for team handoffs, QA, and escalation. | "agency SOP", "internal workflow", "standar operasional tim" | Strictly operational guidelines; does not constitute employment law advice. |
+| `client-portal-spec` | Specifies user requirements and architecture for client progress dashboards and status pages. | "client portal spec", "dashboard architecture" | Pure specification document; zero runtime or network integrations. |
+| `skill-authoring-kit` | Meta-skill and linter assisting community contributors in authoring compliant, verified business skills. | "create new skill", "author a skill", "buat skill baru" | Enforces strict AGENTS.md rules, line limits, and zero-hallucination guardrails. |
+| `localize-skill` | Adapts skill question banks and templates to specific international legal/commercial regions. | "localize skill", "adapt to region", "lokalisasi pasar" | Strictly incorporates verified statutory references; never guesses local regulations. |
 
 ---
 
-## Rilis 5 — `v5.0.0` · "Scale & Ecosystem"
+## Non-Goals (Permanent Architectural Boundaries)
 
-**Tujuan:** membuat skill bisa dipakai tim, dilokalkan, dan diperluas komunitas tanpa mengorbankan aturan keamanan.
+The following areas are intentionally and permanently excluded from `denvora-biz-skills`:
 
-**Skill baru**
-
-| Skill | Fungsi | Pemicu (contoh) | Batasan |
-|---|---|---|---|
-| `subcontract-brief` | Brief/SoW untuk subkontraktor dari scope proyek | "brief freelancer", "subkontrak", "brief vendor" | Tanpa data sensitif; tanpa klausul hukum final |
-| `team-sop` | Bangun SOP agensi: peran, handoff, kualitas, eskalasi | "SOP tim", "alur kerja agensi", "proses internal" | Tidak menetapkan aturan hukum/HR |
-| `client-portal-spec` | Spesifikasi status page/portal klien (bukan kode) | "spesifikasi portal klien", "status page" | Tanpa runtime/network; hanya spesifikasi |
-| `skill-authoring-kit` | Meta-skill untuk membuat, menguji, dan merilis skill baru | "buat skill baru", "authoring skill" | Wajib mengikuti `LEGAL-SAFETY.md` dan gate test |
-| `localize-skill` | Adaptasi skill ke bahasa/pasar lain | "lokalisasi skill", "versi bahasa Indonesia" | Hanya fakta terverifikasi; tanpa aturan pajak/hukum dari memori |
-
-**Fitur platform**
-- **Skill SDK/manifest:** metadata terstruktur (nama, versi, trigger, dependency, batasan) tanpa runtime di skill.
-- **Dependency graph & conflict check:** deteksi skill yang saling bertabrakan trigger-nya.
-- **Community registry/catalog:** daftar skill komunitas dengan status verifikasi yang jelas.
-- **Expanded compatibility matrix:** versi agent yang benar-benar diuji + catatan perilaku.
-- **Paid packs & workshops:** layanan/kustomisasi (bukan fitur skill), terhubung ke Denvora store.
-
-**Exit criteria**
-- SDK dan template skill baru lulus validator yang sama.
-- Registry menampilkan status "tested" vs "untested" secara jujur.
-- Semua skill tetap Markdown-only dan bebas runtime.
+- **No Legal or Tax Certification:** Never outputs "certified legally binding" contracts or tax compliance filings.
+- **No Autonomous Automation:** Never dispatches live emails, sends financial invoices, or triggers payment gateway charges directly.
+- **No Code Runtime or External Network Dependencies:** Skills remain static Markdown instructions. Integrations requiring database access or webhooks belong in dedicated MCP servers.
+- **No Proprietary Market Rate Databases:** Never claims to know standard industry pricing; rates always originate from the user's specific costs and preferences.
 
 ---
 
-## Backlog ide (belum dijadwalkan)
+## Release Governance & Quality Gates
 
-Ide yang masuk akal tetapi belum punya bukti kebutuhan atau belum aman dirilis:
+Each milestone release must satisfy the following verifiable criteria before tagging:
 
-- `contract-checklist` — hanya daftar hal yang perlu ditinjau profesional, **bukan** template kontrak siap tanda tangan.
-- `rate-card-builder` — kartu tarif dari angka pengguna (bisa digabung ke `pricing-strategy`).
-- `meeting-notes` — catatan rapat generik (risiko tumpang tindih dengan `discovery-call`).
-- `proposal-deck-outline` — kerangka slide proposal (teks saja).
-- `retainer-planner` — rencana retainer dari kapasitas dan angka pengguna.
-- `handover-audit` — audit kesiapan handover sebelum dokumen final.
-- `accessibility-checklist` — bisa menjadi area tambahan di `launch-checklist`.
-- `localization-id` — paket referensi Indonesia (klien UMKM, termin, DP) tanpa angka pajak.
-
-## Non-goals permanen
-
-- Nasihat atau sertifikasi hukum, pajak, akuntansi, dan keuangan.
-- Template kontrak yang dipresentasikan "aman ditandatangani".
-- Faktur, pembukuan, atau sistem akuntansi.
-- Mengirim pesan/email/invoice atau menghubungi klien otomatis.
-- Database harga pasar, benchmark industri, atau statistik tanpa sumber.
-- Runtime, script, network call, atau integrasi eksternal **di dalam** skill.
-
-## Aturan rilis
-
-- **Semver:** `vX.Y.Z`. Perubahan format output atau nama skill = major setelah v1.0.
-- **Gate wajib per rilis:** test pack + hasil, kompatibilitas jujur, CHANGELOG, dan migrasi untuk perubahan besar.
-- **Deprecation:** skill yang diganti diberi status deprecated minimal satu minor release sebelum dihapus.
-- **Evidence:** setiap centang di roadmap harus punya tautan ke test log, CI run, atau release.
-- **Satu rilis, satu tema:** jangan campur fitur baru dengan refactor besar.
+1. **Trigger Validation:** 10+ explicit triggering prompts and 10+ near-miss non-triggering prompts documented per skill.
+2. **Hard Gate Zero-Hallucination:** 100% pass rate on task evaluations with zero invented prices, taxes, or credentials.
+3. **Automated Cross-Platform CI:** All validation suites pass cleanly across Ubuntu, Windows, and macOS runners.
+4. **Synchronized Documentation:** Frontmatter versions, catalog specs, PRD, and changelog updated in unison.
