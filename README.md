@@ -95,3 +95,8 @@ See [`CONTRIBUTING.md`](CONTRIBUTING.md). Real client situations (anonymized) wh
 ## License
 
 MIT.
+
+
+## Safety Architecture
+
+Zero invented prices, prompt injection isolation, and safe draft boundaries.
