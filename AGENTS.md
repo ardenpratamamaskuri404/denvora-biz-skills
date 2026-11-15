@@ -1,0 +1,53 @@
+# AGENTS.md — denvora-biz-skills
+
+Entry point for any AI agent working on this repo. Read this first.
+
+## Project
+
+A collection of agent skills (folders with `SKILL.md`) for business tasks of freelancers and small digital businesses: client briefs, quotes, launch checklists, and more. Plain Markdown, no code runtime, no dependencies.
+
+## Layout
+
+```
+denvora-biz-skills/
+├─ skills/<skill-name>/SKILL.md   # one folder per skill
+│  └─ references/                 # templates, question banks (loaded only when needed)
+├─ docs/                          # project documentation
+├─ README.md  CONTRIBUTING.md  SECURITY.md  CHANGELOG.md  LICENSE
+```
+
+## Docs map
+
+| Task | Read |
+|---|---|
+| What and why | `docs/PRD.md` |
+| What is broken/missing and why | `docs/AUDIT.md` |
+| What each skill must do | `docs/SKILLS-CATALOG.md` |
+| How to write a skill | `docs/SKILL-AUTHORING.md` |
+| Tests and release gates | `docs/TESTING-EVAL.md` |
+| Legal/financial safety rules | `docs/LEGAL-SAFETY.md` |
+| Install and release | `docs/DISTRIBUTION.md` |
+| Upkeep | `docs/MAINTENANCE.md` |
+| Order of work | `docs/ROADMAP.md` |
+
+## Rules
+
+1. **Never invent facts.** No fake prices, tax rates, laws, statistics, testimonials, or examples presented as real. Use clearly labeled placeholders.
+2. **Follow `docs/LEGAL-SAFETY.md`** for anything touching contracts, taxes, or compliance.
+3. **Keep `SKILL.md` short** (target under ~250 lines). Move detail to `references/`.
+4. **Frontmatter must have `name` and `description`;** `name` equals the folder name (kebab-case).
+5. **Descriptions say what the skill does and when to trigger it,** including natural phrases in Indonesian and English.
+6. **Every skill replies in the user's language** and never makes the user feel dumb.
+7. **Verify, then report.** Test with real prompts (see `TESTING-EVAL.md`) before claiming a skill works.
+8. **Don't weaken tests or rules** to make a skill pass.
+9. **Update docs and CHANGELOG** when behavior changes.
+10. **No secrets or real client data** in the repo. Examples must be fictional or anonymized.
+
+## Definition of done (per skill change)
+
+- [ ] Frontmatter valid; folder name matches
+- [ ] Trigger tests (should/should-not) run and recorded
+- [ ] Task tests run with and without the skill and recorded
+- [ ] Legal/financial rules respected
+- [ ] README table and `SKILLS-CATALOG.md` updated
+- [ ] CHANGELOG updated
