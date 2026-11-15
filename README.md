@@ -1,15 +1,17 @@
 <div align="center">
 
-<img src="assets/denvora-biz-skills-logo.png" alt="denvora-biz-skills" width="380" />
+<img src="assets/denvora-biz-skills-logo.png" alt="denvora-biz-skills" width="540" />
 
 ### Agent skills for freelancers, solo builders, and digital agencies.
 
-Turn messy client chats into clear briefs, briefs into honest quotes, and launches into checklists that never forget the boring-but-critical details.
+Turn messy client chats into clear briefs, briefs into honest quotes, launches into foolproof checklists, client deliverables into formal handovers, and products into transparent landing pages.
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-black.svg)](LICENSE)
-[![Status: Beta](https://img.shields.io/badge/Status-Public_Beta_v0.1.0-black.svg)](CHANGELOG.md)
-[![Compatible with Antigravity](https://img.shields.io/badge/Agent-Antigravity-black.svg)](#compatibility--supported-tools)
-[![Compatible with Claude](https://img.shields.io/badge/Agent-Claude-black.svg)](#compatibility--supported-tools)
+[![License: MIT](https://img.shields.io/badge/License-MIT-3b82f6.svg?style=flat&logo=open-source-initiative&logoColor=white)](LICENSE)
+[![Version: v0.1.0](https://img.shields.io/badge/Version-v0.1.0--beta-10b981.svg?style=flat&logo=github&logoColor=white)](CHANGELOG.md)
+[![Agent: Antigravity](https://img.shields.io/badge/Antigravity-Verified-4285F4.svg?style=flat&logo=google&logoColor=white)](#compatibility--supported-tools)
+[![Agent: Claude](https://img.shields.io/badge/Claude-Compatible-D97706.svg?style=flat&logo=anthropic&logoColor=white)](#compatibility--supported-tools)
+[![Agent: ChatGPT](https://img.shields.io/badge/ChatGPT-Compatible-10A37F.svg?style=flat&logo=openai&logoColor=white)](#compatibility--supported-tools)
+[![Agent: Cursor](https://img.shields.io/badge/Cursor-Compatible-007acc.svg?style=flat&logo=visualstudiocode&logoColor=white)](#compatibility--supported-tools)
 
 **[English](#english)** • **[Bahasa Indonesia](#bahasa-indonesia)**
 
@@ -39,7 +41,7 @@ Freelancers, small studios, and solo builders often manage the business side wit
 
 ## Workflow Lifecycle
 
-How the 3 business skills collaborate seamlessly across the lifecycle of a digital freelance project:
+How the 5 business skills collaborate seamlessly across the full lifecycle of a digital freelance project:
 
 <div align="center">
   <img src="assets/workflow-lifecycle.png" alt="denvora-biz-skills Workflow Lifecycle" width="100%" />
@@ -47,15 +49,17 @@ How the 3 business skills collaborate seamlessly across the lifecycle of a digit
 
 ---
 
-## The Skills
+## The Complete Skill Suite
+
+All 5 skills are fully implemented, verified, and ready for immediate production use:
 
 | Skill | What it does | Status |
 |---|---|:---:|
 | [`client-brief`](skills/client-brief) | Turns messy client messages (WhatsApp, email, audio transcripts) into a structured brief, proposed scope, labeled assumptions, and prioritized blocking questions. | `v0.1.0` |
 | [`quote-builder`](skills/quote-builder) | Builds clear, honest proposals and RAB breakdowns strictly from **your own rates** with visible arithmetic verification and formal change-request rules. | `v0.1.0` |
 | [`launch-checklist`](skills/launch-checklist) | Generates tailored pre-launch readiness checklists (Blocker / Should / Nice-to-have) for websites, apps, and digital products without skipping operational details. | `v0.1.0` |
-| `handover` | Project handover checklists: credentials, access, documentation, and maintenance agreements. | *planned* |
-| `product-page` | Honest product page copywriting: features, ideal audience, technical constraints, and guarantees. | *planned* |
+| [`handover`](skills/handover) | Formulates formal project handover documentation, credential transfer protocols, codebase links, maintenance boundaries, and client sign-off sheets. | `v0.1.0` |
+| [`product-page`](skills/product-page) | Drafts high-converting digital product copy: value propositions, problem-benefit mapping, technical prerequisites, anti-personas, and transparent refund terms. | `v0.1.0` |
 
 > Each skill folder in [`skills/`](skills/) is self-contained with its own `SKILL.md` rules and `references/` question banks and layout templates.
 
@@ -111,7 +115,7 @@ Copy the desired skill folder from [`skills/`](skills/) directly into your agent
 - Restart or reload your agent session after copying.
 
 ### 3. Claude (Web & Desktop)
-1. Download the pre-built `.skill` zip files (`client-brief.skill`, `quote-builder.skill`, `launch-checklist.skill`) from [`dist/`](dist/) or the GitHub Releases page.
+1. Download the pre-built `.skill` zip files (`client-brief.skill`, `quote-builder.skill`, `launch-checklist.skill`, `handover.skill`, `product-page.skill`) from [`dist/`](dist/) or the GitHub Releases page.
 2. In Claude, navigate to **Settings** → **Capabilities** → **Skills** and upload the `.skill` file.
 
 ---
@@ -123,6 +127,8 @@ Interact naturally with your AI assistant. The appropriate skill automatically t
 - *"A client sent me this messy WhatsApp chat about an online shoe store, help me turn it into a brief..."* ➡️ **`client-brief`** activates.
 - *"Prepare a formal proposal from this brief. My hourly rate is $45 and estimated effort is 35 hours..."* ➡️ **`quote-builder`** activates.
 - *"We are launching our digital template store on Monday. What should we verify before opening to the public?"* ➡️ **`launch-checklist`** activates.
+- *"The client approved the website, help me write a formal handover document and credential checklist..."* ➡️ **`handover`** activates.
+- *"I am launching a Notion business template for freelance designers, draft a complete product sales page..."* ➡️ **`product-page`** activates.
 
 All skills automatically detect and reply in your language (English or Indonesian).
 
@@ -169,7 +175,7 @@ Freelancer, studio digital kecil, dan solo builder seringkali mengelola sisi bis
 
 ## Alur Kerja Lengkap (Workflow Lifecycle)
 
-Bagaimana 3 skill bisnis ini bekerja berkesinambungan mendampingi proyek freelance Anda dari pesan awal hingga peluncuran:
+Bagaimana 5 skill bisnis ini bekerja berkesinambungan mendampingi proyek freelance Anda dari pesan awal hingga peluncuran dan serah terima:
 
 <div align="center">
   <img src="assets/workflow-lifecycle.png" alt="Alur Kerja denvora-biz-skills" width="100%" />
@@ -177,15 +183,17 @@ Bagaimana 3 skill bisnis ini bekerja berkesinambungan mendampingi proyek freelan
 
 ---
 
-## Daftar Skill
+## Daftar Lengkap Skill Bisnis
+
+Seluruh 5 skill telah selesai dibuat, diuji, dan langsung siap dipakai publik:
 
 | Skill | Fungsi Utama | Status |
 |---|---|:---:|
 | [`client-brief`](skills/client-brief) | Mengubah pesan klien yang berantakan (chat WA, email, transkrip voice note) menjadi brief proyek terstruktur, pembagian cakupan (In/Out-of-Scope), daftar asumsi, dan pertanyaan klarifikasi prioritas. | `v0.1.0` |
 | [`quote-builder`](skills/quote-builder) | Menyusun surat penawaran harga (quotation/RAB) transparan berdasarkan **tarif Anda sendiri** dengan verifikasi perhitungan matematika, batasan revisi, dan alur permintaan perubahan (*change request*). | `v0.1.0` |
 | [`launch-checklist`](skills/launch-checklist) | Menyusun daftar periksa pra-rilis (*pre-launch checklist*) yang disesuaikan untuk website, aplikasi, atau produk digital dengan memprioritaskan hal-hal krusial (Blocker, Should, Nice-to-have). | `v0.1.0` |
-| `handover` | Checklist serah terima proyek: kredensial akses, dokumentasi teknis, dan kesepakatan pemeliharaan. | *direncanakan* |
-| `product-page` | Penulisan draf halaman produk digital: fitur, target pembeli, batasan teknis, dan transparansi nilai. | *direncanakan* |
+| [`handover`](skills/handover) | Menyusun dokumen serah terima proyek resmi (*project handover*), protokol pemindahan kepemilikan akun/kredensial aman, batasan masa garansi perbaikan bug, dan lembar persetujuan klien. | `v0.1.0` |
+| [`product-page`](skills/product-page) | Menyusun copywriting halaman produk digital / SaaS / template berkonversi tinggi: value proposition, pemetaan masalah-solusi, prasyarat teknis, kualifikasi pembeli, dan draf kebijakan refund transparan. | `v0.1.0` |
 
 > Setiap folder skill di dalam direktori [`skills/`](skills/) dilengkapi file `SKILL.md` dan folder `references/` berisi template serta question bank siap pakai.
 
@@ -241,7 +249,7 @@ Salin folder skill yang Anda inginkan dari folder [`skills/`](skills/) ke direkt
 - Muat ulang (*restart*) sesi agent Anda setelah menyalin folder.
 
 ### 3. Claude (Web & Desktop)
-1. Unduh file arsip `.skill` (`client-brief.skill`, `quote-builder.skill`, `launch-checklist.skill`) dari folder [`dist/`](dist/) atau tab GitHub Releases.
+1. Unduh file arsip `.skill` (`client-brief.skill`, `quote-builder.skill`, `launch-checklist.skill`, `handover.skill`, `product-page.skill`) dari folder [`dist/`](dist/) atau tab GitHub Releases.
 2. Di aplikasi Claude, buka **Settings** → **Capabilities** → **Skills** lalu unggah file `.skill` tersebut.
 
 ---
@@ -253,6 +261,8 @@ Cukup ajak asisten AI Anda berdiskusi secara alami dalam bahasa Indonesia:
 - *"Klien kirim pesan WA panjang mau bikin website toko batik di Pekalongan, tolong rapikan brief-nya..."* ➡️ **`client-brief`** aktif.
 - *"Buatkan proposal penawaran resmi dari brief ini, tarif saya Rp 200.000/jam dengan estimasi 40 jam..."* ➡️ **`quote-builder`** aktif.
 - *"Website WooCommerce produk digital saya mau launching besok, apa saja checklist sebelum rilis?"* ➡️ **`launch-checklist`** aktif.
+- *"Klien sudah approve website-nya, tolong buatkan dokumen serah terima proyek dan checklist pemindahan akun..."* ➡️ **`handover`** aktif.
+- *"Saya mau rilis template Notion sistem keuangan untuk freelancer, buatkan copywriting halaman produknya..."* ➡️ **`product-page`** aktif.
 
 Seluruh skill akan merespons secara otomatis dalam bahasa Indonesia yang ramah, sopan, dan profesional.
 
@@ -260,7 +270,7 @@ Seluruh skill akan merespons secara otomatis dalam bahasa Indonesia yang ramah, 
 
 ## Dukungan & Status Proyek
 
-- **Status:** **Public Beta** (`v0.1.x`) menuju `v1.0.0`. Seluruh skill inti telah melalui evaluasi uji kasus nyata.
+- **Status:** **Public Beta** (`v0.1.x`) menuju `v1.0.0`. Seluruh 5 skill inti telah selesai dibuat dan diverifikasi.
 - **Waktu Respon Isu:** Pertanyaan dan masukan pada tab Issues ditanggapi dalam waktu maksimal **48 jam kerja**.
 - **Batasan Dukungan:** Kami memelihara skill open-source, paket pengujian, dan skrip distribusi. Kami tidak menyediakan layanan konsultasi hukum, perpajakan, atau pembuatan penawaran kustom perorangan.
 

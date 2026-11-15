@@ -6,7 +6,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.1.0] - 2026-11-15
 
-First public beta release of `denvora-biz-skills`.
+First complete public release of `denvora-biz-skills` featuring all 5 core freelance business skills.
 
 ### Added
 - **`client-brief` (v0.1.0):**
@@ -22,14 +22,23 @@ First public beta release of `denvora-biz-skills`.
   - Tailored pre-launch checklist covering Blockers, Should, and Nice-to-have items.
   - Added explicit Unconfirmed Items section to reject unverified claims.
   - Clear boundaries against unauthorized legal/tax certification.
+- **`handover` (v0.1.0):**
+  - Project handover documentation covering deliverables checklist, live URLs, repository transfer, and database dumps.
+  - Credential and account ownership transfer protocol without plaintext secret exposure.
+  - Clear warranty and bugfix window terms with formal client acceptance sign-off.
+- **`product-page` (v0.1.0):**
+  - Digital product copywriting and page architecture for SaaS, templates, and digital downloads.
+  - Problem-benefit mapping, technical prerequisites, anti-personas, and transparent refund terms.
+  - Hard gate against invented testimonials, fake reviews, or fabricated user statistics.
 - **Tooling, Packaging & CI:**
-  - Added GitHub Actions workflow `.github/workflows/validate-skills.yml` for automated frontmatter, line limit, and secret checking.
-  - Added validation script `scripts/validate-skills.js` and `.skill` zip packaging utilities (`scripts/package-skills.ps1` and `scripts/package-skills.js`).
-  - Added full repository verification and link checking suite `scripts/verify-all.js`.
+  - Automated GitHub Actions workflow `.github/workflows/validate-skills.yml` for frontmatter, line limit, and secret checking.
+  - Cross-platform packaging utilities (`scripts/package-skills.ps1` and `scripts/package-skills.js`) with POSIX zip normalization.
+  - Full pre-release audit and link checker suite `scripts/verify-all.js`.
+  - Skill metadata and line limit validator `scripts/validate-skills.js`.
 - **Visual Assets & Documentation:**
-  - Added brand logo (`assets/denvora-biz-skills-logo.png`).
-  - Added Workflow Lifecycle activity diagram (`assets/workflow-lifecycle.png`).
-  - Added Safety Guardrail activity diagram (`assets/workflow-principles.png`).
-  - Added Bento-style Product Overview showcase (`assets/product-overview.png`).
-  - Added comprehensive bilingual documentation (English & Bahasa Indonesia) in `README.md`.
-  - Added agent developer instructions in `AGENTS.md` and contributor guidelines in `CONTRIBUTING.md`.
+  - Official brand logo (`assets/denvora-biz-skills-logo.png`).
+  - Activity diagram for project lifecycle (`assets/workflow-lifecycle.png`).
+  - Activity diagram for safety guardrails and three pillars (`assets/workflow-principles.png`).
+  - Bento Card product overview showcase (`assets/product-overview.png`).
+  - Complete, self-contained bilingual documentation (English & Bahasa Indonesia) in `README.md`.
+  - Standalone rules for coding agents in `AGENTS.md` and contributor guide in `CONTRIBUTING.md`.
