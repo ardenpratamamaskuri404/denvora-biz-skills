@@ -1,5 +1,6 @@
 ---
 name: client-brief
+version: 0.1.0
 description: Turns messy client messages (chats, emails, voice-note transcripts, vague requests) into a clear project brief, proposed scope, labeled assumptions, and prioritized questions to ask the client. Use whenever the user pastes a client request or says things like "klien minta dibuatkan...", "rapikan brief", "bikin brief", "scope kerjanya apa", "klien belum jelas", "what should I ask the client", or needs to understand what a client really wants before quoting or starting work, even if they don't say "brief". Not for pricing (use quote-builder).
 ---
 
