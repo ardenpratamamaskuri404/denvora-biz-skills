@@ -14,7 +14,7 @@ Include:
 ## Propose a change (pull request)
 
 1. Fork and branch.
-2. Read `AGENTS.md`, `docs/SKILL-AUTHORING.md`, and `docs/LEGAL-SAFETY.md`.
+2. Read `AGENTS.md` for architecture and safety rules.
 3. Keep `SKILL.md` short; put detail in `references/`.
 4. Add or update test prompts in `docs/TESTING-EVAL.md` and note the results.
 5. Update the README table and CHANGELOG.
