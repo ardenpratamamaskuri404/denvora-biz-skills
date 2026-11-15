@@ -22,6 +22,11 @@ These skills give your AI assistant clear working habits for business tasks: **a
 
 ## Skills
 
+<p align="center">
+  <img src="assets/workflow-lifecycle.png" alt="Workflow Lifecycle" width="800" />
+</p>
+
+
 | Skill | What it does | Status |
 |---|---|---|
 | [`client-brief`](skills/client-brief) | Turns messy client messages into a clear brief, scope, assumptions, and prioritized questions | v0.1 |
