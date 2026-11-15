@@ -151,6 +151,12 @@ All skills automatically detect and reply in your language (English or Indonesia
 - **License:** [`LICENSE`](LICENSE) (MIT)
 
 ---
+
+## Author
+
+- **Author & Maintainer:** [Arden Pratama Maskuri](https://github.com/ardenpratamamaskuri404)
+
+---
 ---
 
 <div id="bahasa-indonesia"></div>
@@ -281,3 +287,11 @@ Seluruh skill akan merespons secara otomatis dalam bahasa Indonesia yang ramah, 
 - Ingin berkontribusi atau melaporkan hasil yang kurang tepat? Baca panduan di [`CONTRIBUTING.md`](CONTRIBUTING.md).
 - Aturan arsitektur untuk asisten koding AI tersedia di [`AGENTS.md`](AGENTS.md).
 - Dilindungi oleh lisensi [MIT](LICENSE). Bebas digunakan untuk kebutuhan freelance pribadi maupun agensi digital Anda.
+
+---
+
+## Penulis & Pengelola
+
+- **Author & Maintainer:** [Arden Pratama Maskuri](https://github.com/ardenpratamamaskuri404)
+
+
