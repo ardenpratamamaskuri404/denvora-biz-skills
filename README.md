@@ -50,7 +50,7 @@ Many freelancers, independent makers, and small agencies rely on AI assistants f
 The 5 business skills operate cooperatively across the full freelance service lifecycle, from initial client contact to final project delivery:
 
 <div align="center">
-  <img src="assets/workflow-lifecycle.png" alt="denvora-biz-skills Workflow Lifecycle" width="100%" />
+  <img src="assets/workflow-lifecycle-flow.png" alt="denvora-biz-skills Workflow Lifecycle" width="100%" />
 </div>
 
 ---
@@ -286,7 +286,7 @@ Banyak freelancer, *solo builder*, dan pemilik agensi digital telah menggunakan 
 Seluruh 5 skill bisnis ini bekerja berkesinambungan mendampingi siklus hidup proyek digital Anda dari pesan awal hingga serah terima selesai:
 
 <div align="center">
-  <img src="assets/workflow-lifecycle.png" alt="Alur Kerja denvora-biz-skills" width="100%" />
+  <img src="assets/workflow-lifecycle-flow.png" alt="Alur Kerja denvora-biz-skills" width="100%" />
 </div>
 
 ---
