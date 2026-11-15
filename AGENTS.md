@@ -16,19 +16,9 @@ denvora-biz-skills/
 ├─ README.md  CONTRIBUTING.md  SECURITY.md  CHANGELOG.md  LICENSE
 ```
 
-## Docs map
+## Documentation & Contributing
 
-| Task | Read |
-|---|---|
-| What and why | `docs/PRD.md` |
-| What is broken/missing and why | `docs/AUDIT.md` |
-| What each skill must do | `docs/SKILLS-CATALOG.md` |
-| How to write a skill | `docs/SKILL-AUTHORING.md` |
-| Tests and release gates | `docs/TESTING-EVAL.md` |
-| Legal/financial safety rules | `docs/LEGAL-SAFETY.md` |
-| Install and release | `docs/DISTRIBUTION.md` |
-| Upkeep | `docs/MAINTENANCE.md` |
-| Order of work | `docs/ROADMAP.md` |
+All skill documentation is self-contained within each skill folder and README.md.
 
 ## Rules
 
