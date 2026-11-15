@@ -4,12 +4,12 @@
 
 ## Supported Versions
 
-Only the latest release receive active security and bug fixes:
+Only the current official release receives active security updates and prompt safety patches:
 
 | Version | Supported | Notes |
 |:---:|:---:|---|
-| `v0.1.x` (Public Beta) | ✅ Supported | Current active development branch |
-| `< v0.1.0` | ❌ Not Supported | Pre-release and legacy drafts |
+| `v1.0.x` (Official Release) | ✅ Supported | Official production public release |
+| `< v1.0.0` | ❌ Not Supported | Early development and pre-release drafts |
 
 ## What This Repository Promises
 

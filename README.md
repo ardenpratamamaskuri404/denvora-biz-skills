@@ -7,7 +7,7 @@
 Turn messy client chats into structured briefs, draft honest quotes strictly from your real rates, safeguard launches with actionable checklists, formalize handovers, and generate high-converting digital product copy.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-3b82f6.svg?style=flat&logo=open-source-initiative&logoColor=white)](LICENSE)
-[![Version: v0.1.0](https://img.shields.io/badge/Version-v0.1.0--beta-10b981.svg?style=flat&logo=github&logoColor=white)](CHANGELOG.md)
+[![Version: v1.0.0](https://img.shields.io/badge/Version-v1.0.0-10b981.svg?style=flat&logo=github&logoColor=white)](CHANGELOG.md)
 [![Agent: Claude](https://img.shields.io/badge/Claude-Compatible-D97706.svg?style=flat&logo=anthropic&logoColor=white)](#compatibility--supported-platforms)
 [![Agent: Cursor](https://img.shields.io/badge/Cursor-Compatible-007acc.svg?style=flat&logo=visualstudiocode&logoColor=white)](#compatibility--supported-platforms)
 [![Agent: ChatGPT](https://img.shields.io/badge/ChatGPT-Compatible-10A37F.svg?style=flat&logo=openai&logoColor=white)](#compatibility--supported-platforms)
@@ -61,11 +61,11 @@ All 5 core skills are implemented, audited, and ready for production use:
 
 | Skill | Primary Business Function | Status |
 |---|---|:---:|
-| [`client-brief`](skills/client-brief) | Converts unstructured client chats (WhatsApp threads, emails, audio notes) into a structured brief: requirements summary, In/Out-of-Scope demarcation, documented assumptions, and prioritized blocking questions. | `v0.1.0` |
-| [`quote-builder`](skills/quote-builder) | Formulates transparent commercial proposals (RAB/estimates) derived strictly from **your stated rates**, complete with visible arithmetic verification, revision caps, and formal change-request rules. | `v0.1.0` |
-| [`launch-checklist`](skills/launch-checklist) | Generates tailored pre-launch readiness checklists for websites, applications, and digital products, categorizing tasks into *Blocker*, *Should*, and *Nice-to-have*. | `v0.1.0` |
-| [`handover`](skills/handover) | Drafts formal project handover records, secure credential transfer protocols, bug warranty windows, and client final sign-off documentation. | `v0.1.0` |
-| [`product-page`](skills/product-page) | Generates persuasive digital product and SaaS landing page copy: value proposition, pain-to-gain mapping, technical prerequisites, buyer disqualifiers, and transparent refund terms. | `v0.1.0` |
+| [`client-brief`](skills/client-brief) | Converts unstructured client chats (WhatsApp threads, emails, audio notes) into a structured brief: requirements summary, In/Out-of-Scope demarcation, documented assumptions, and prioritized blocking questions. | `v1.0.0` |
+| [`quote-builder`](skills/quote-builder) | Formulates transparent commercial proposals (RAB/estimates) derived strictly from **your stated rates**, complete with visible arithmetic verification, revision caps, and formal change-request rules. | `v1.0.0` |
+| [`launch-checklist`](skills/launch-checklist) | Generates tailored pre-launch readiness checklists for websites, applications, and digital products, categorizing tasks into *Blocker*, *Should*, and *Nice-to-have*. | `v1.0.0` |
+| [`handover`](skills/handover) | Drafts formal project handover records, secure credential transfer protocols, bug warranty windows, and client final sign-off documentation. | `v1.0.0` |
+| [`product-page`](skills/product-page) | Generates persuasive digital product and SaaS landing page copy: value proposition, pain-to-gain mapping, technical prerequisites, buyer disqualifiers, and transparent refund terms. | `v1.0.0` |
 
 > Each skill folder in [`skills/`](skills/) is self-contained with its own `SKILL.md` rules and a `references/` subfolder containing ready-to-use templates and question banks.
 
@@ -202,7 +202,7 @@ denvora-biz-skills/
 
 ## Release Status & Support
 
-- **Status:** **Public Beta** (`v0.1.0`) targeting `v1.0.0`. All 5 skills are fully implemented and verified with 100% test suite pass rate.
+- **Status:** **Official Public Release** (`v1.0.0`). All 5 core skills are fully implemented, verified, and ready for production client work.
 - **Issue SLA:** Questions, feedback, and bug reports on the GitHub Issues tab are reviewed within **48 business hours**.
 - **Scope of Support:** We maintain open-source skills, testing suites, and distribution packages. We do not provide personalized legal counsel, tax filings, or individual commercial estimates.
 
@@ -297,11 +297,11 @@ Seluruh 5 skill telah selesai dikembangkan, divalidasi, dan siap digunakan secar
 
 | Skill | Fungsi & Nilai Bisnis | Status |
 |---|---|:---:|
-| [`client-brief`](skills/client-brief) | Mengubah percakapan klien yang berantakan (chat WhatsApp, rekaman voice note, email panjang) menjadi dokumen brief resmi: ringkasan kebutuhan, pemisahan *In/Out-of-Scope*, daftar asumsi, dan pertanyaan klarifikasi prioritas tinggi. | `v0.1.0` |
-| [`quote-builder`](skills/quote-builder) | Menyusun surat penawaran harga (RAB/Proposal) transparan berdasarkan **tarif Anda sendiri**, dilengkapi formula verifikasi matematika yang terlihat, batasan jumlah revisi, dan klausul *change-request*. | `v0.1.0` |
-| [`launch-checklist`](skills/launch-checklist) | Menghasilkan daftar periksa pra-peluncuran (*pre-launch checklist*) terstruktur untuk website, aplikasi, atau produk digital: mengelompokkan risiko ke dalam kategori *Blocker*, *Should*, dan *Nice-to-have*. | `v0.1.0` |
-| [`handover`](skills/handover) | Menyusun berita acara serah terima proyek resmi (*project handover*), protokol pemindahan kredensial dan hak akses aman, batas masa garansi perbaikan bug, dan lembar persetujuan akhir klien (*sign-off*). | `v0.1.0` |
-| [`product-page`](skills/product-page) | Menyusun copywriting halaman penjualan produk digital / SaaS / template berkonversi tinggi: *value proposition*, pemetaan masalah ke solusi, prasyarat teknis, kualifikasi pembeli, dan draf kebijakan *refund* yang transparan. | `v0.1.0` |
+| [`client-brief`](skills/client-brief) | Mengubah percakapan klien yang berantakan (chat WhatsApp, rekaman voice note, email panjang) menjadi dokumen brief resmi: ringkasan kebutuhan, pemisahan *In/Out-of-Scope*, daftar asumsi, dan pertanyaan klarifikasi prioritas tinggi. | `v1.0.0` |
+| [`quote-builder`](skills/quote-builder) | Menyusun surat penawaran harga (RAB/Proposal) transparan berdasarkan **tarif Anda sendiri**, dilengkapi formula verifikasi matematika yang terlihat, batasan jumlah revisi, dan klausul *change-request*. | `v1.0.0` |
+| [`launch-checklist`](skills/launch-checklist) | Menghasilkan daftar periksa pra-peluncuran (*pre-launch checklist*) terstruktur untuk website, aplikasi, atau produk digital: mengelompokkan risiko ke dalam kategori *Blocker*, *Should*, dan *Nice-to-have*. | `v1.0.0` |
+| [`handover`](skills/handover) | Menyusun berita acara serah terima proyek resmi (*project handover*), protokol pemindahan kredensial dan hak akses aman, batas masa garansi perbaikan bug, dan lembar persetujuan akhir klien (*sign-off*). | `v1.0.0` |
+| [`product-page`](skills/product-page) | Menyusun copywriting halaman penjualan produk digital / SaaS / template berkonversi tinggi: *value proposition*, pemetaan masalah ke solusi, prasyarat teknis, kualifikasi pembeli, dan draf kebijakan *refund* yang transparan. | `v1.0.0` |
 
 > Setiap folder skill di dalam direktori [`skills/`](skills/) bersifat mandiri (*self-contained*), memiliki aturan operasional di `SKILL.md`, serta template dan bank pertanyaan di subdirektori `references/`.
 
@@ -412,7 +412,7 @@ Cukup ajak asisten AI Anda berdiskusi secara wajar dalam bahasa Indonesia. Asist
 
 ## Status Rilis & Dukungan
 
-- **Status:** **Public Beta** (`v0.1.0`) menuju `v1.0.0`. Seluruh 5 skill inti telah selesai diimplementasikan dan lolos uji verifikasi integritas 100%.
+- **Status:** **Rilis Resmi Publik** (`v1.0.0`). Seluruh 5 skill inti telah selesai diimplementasikan, diverifikasi 100%, dan siap digunakan langsung untuk pekerjaan profesional.
 - **Waktu Respon Isu:** Pertanyaan, kendala, atau saran perbaikan pada tab Issues repositori ini ditanggapi dalam waktu maksimal **48 jam kerja**.
 - **Batasan Dukungan:** Kami memelihara paket skill open-source, standar pengujian prompt, dan skrip pengemasan distribusi. Kami tidak menyediakan konsultasi hukum, akuntansi perpajakan, atau jasa penawaran harga pribadi.
 

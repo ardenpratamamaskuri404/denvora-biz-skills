@@ -1,6 +1,6 @@
 ---
 name: launch-checklist
-version: 0.1.0
+version: 1.0.0
 description: Creates a tailored pre-launch checklist for a website, app, digital product, or service offering, covering product readiness, payments, legal pages, domain and HTTPS, SEO basics, analytics and privacy, performance, support, rollback, and announcement. Use when the user says "mau rilis", "launch", "go live", "siap tayang?", "checklist sebelum rilis", "sebelum deploy", or is about to publish or start selling something online, even if they don't ask for a checklist.
 ---
 

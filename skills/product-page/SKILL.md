@@ -1,6 +1,6 @@
 ---
 name: product-page
-version: 0.1.0
+version: 1.0.0
 description: Drafts clear, honest copywriting and architecture for digital product pages (SaaS, digital downloads, templates, courses, productized services). Focuses on clear value proposition, audience fit, technical constraints, and transparent refund policies. Pemicu: "bikin landing page produk", "copywriting produk digital", "product page draft", "bikin deskripsi produk jualan", "write product page", "landing page template".
 ---
 

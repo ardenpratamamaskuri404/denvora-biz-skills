@@ -1,6 +1,6 @@
 ---
 name: handover
-version: 0.1.0
+version: 1.0.0
 description: Produces a clear, professional project handover document for completed client work, covering asset transfers, credential guidance, codebase/hosting links, maintenance boundaries, and formal sign-off. Use when the user says "serah terima proyek", "bikin handover", "project handover", "handover checklist", "klien minta serah terima", "deliver project to client", or needs a final sign-off document.
 ---
 

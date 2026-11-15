@@ -4,29 +4,29 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [0.1.0] - 2026-11-15
+## [1.0.0] - 2026-11-15
 
-First complete public release of `denvora-biz-skills` featuring all 5 core freelance business skills.
+Official General Availability (GA) public release of `denvora-biz-skills` featuring all 5 complete digital business skills for AI agents.
 
 ### Added
-- **`client-brief` (v0.1.0):**
+- **`client-brief` (v1.0.0):**
   - Turns unstructured client chats, transcripts, and emails into structured project briefs.
   - Added prompt injection detection and untrusted data isolation.
   - Standardized bilingual safety note and placeholder convention (`[ISI: ...]` / `[FILL IN: ...]`).
-- **`quote-builder` (v0.1.0):**
+- **`quote-builder` (v1.0.0):**
   - Itemized proposal generation strictly derived from user-provided rates and hours.
   - Zero-invented-pricing hard gate.
   - Added currency formatting guidance and explicit arithmetic verification line.
   - Added scope exclusion boundaries and formal change-request rules.
-- **`launch-checklist` (v0.1.0):**
+- **`launch-checklist` (v1.0.0):**
   - Tailored pre-launch checklist covering Blockers, Should, and Nice-to-have items.
   - Added explicit Unconfirmed Items section to reject unverified claims.
   - Clear boundaries against unauthorized legal/tax certification.
-- **`handover` (v0.1.0):**
+- **`handover` (v1.0.0):**
   - Project handover documentation covering deliverables checklist, live URLs, repository transfer, and database dumps.
   - Credential and account ownership transfer protocol without plaintext secret exposure.
   - Clear warranty and bugfix window terms with formal client acceptance sign-off.
-- **`product-page` (v0.1.0):**
+- **`product-page` (v1.0.0):**
   - Digital product copywriting and page architecture for SaaS, templates, and digital downloads.
   - Problem-benefit mapping, technical prerequisites, anti-personas, and transparent refund terms.
   - Hard gate against invented testimonials, fake reviews, or fabricated user statistics.
