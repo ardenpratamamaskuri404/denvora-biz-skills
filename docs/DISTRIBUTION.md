@@ -8,8 +8,8 @@ Keep each skill in `skills/<name>/SKILL.md`. This layout is what common skills i
 
 | Method | Command / action |
 |---|---|
-| Skills CLI (project) | `npx skills add USERNAME/denvora-biz-skills -a antigravity` |
-| Skills CLI (global) | `npx skills add USERNAME/denvora-biz-skills -a antigravity -g` |
+| Skills CLI (project) | `npx skills add ardenpratamamaskuri404/denvora-biz-skills -a antigravity` |
+| Skills CLI (global) | `npx skills add ardenpratamamaskuri404/denvora-biz-skills -a antigravity -g` |
 | Single skill | Use the installer's option for choosing a skill (check `npx skills --help`) |
 | Manual | Copy `skills/<name>/` to `.agent/skills/` (project) or `~/.gemini/antigravity/skills/` (global); restart the agent session |
 | Claude web/desktop | Upload the `.skill` file in Settings → Capabilities → Skills |
@@ -31,8 +31,8 @@ Each skill is packaged as a `.skill` file (a zip of the skill folder) and attach
 
 1. All release gates in `TESTING-EVAL.md` pass.
 2. Update README table, catalog, CHANGELOG.
-3. Replace placeholders (`USERNAME`).
-4. Tag the version and create a GitHub Release with the `.skill` files.
+3. Confirm repository owner (`ardenpratamamaskuri404`) and release tags.
+4. Tag the version and create a GitHub Release with the `.skill` files attached.
 5. Test a fresh install on a clean setup, using only the README.
 6. Announce with honest limits and real test results.
 
@@ -44,12 +44,12 @@ Each skill is packaged as a `.skill` file (a zip of the skill folder) and attach
 
 **Suggested GitHub description:**
 ```
-Agent skills for freelancers and small digital businesses: client briefs, honest quotes, and launch checklists.
+Agent skills for freelancers and digital agencies: client briefs, honest quotes, launch checklists, project handovers, and product pages.
 ```
 
 **Suggested topics:**
 ```
-agent-skills, ai-skills, freelancer, client-brief, quotation, launch-checklist, antigravity, claude, productivity, open-source
+agent-skills, ai-skills, freelancer, client-brief, quote-builder, launch-checklist, handover, product-page, antigravity, claude, claude-code, productivity, open-source
 ```
 (Add `antigravity` and `claude` only after testing in both.)
 

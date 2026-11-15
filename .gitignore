@@ -9,12 +9,9 @@ desktop.ini
 *.swp
 *.swo
 
-# Build & packaging output
-dist/
-build/
-*.skill
-
 # Temporary and log files
 *.log
 tmp/
 .temp/
+scratch/
+node_modules/

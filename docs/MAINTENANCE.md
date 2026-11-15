@@ -14,26 +14,27 @@ Skills are plain text, so upkeep is light. Keep it that way.
 
 ## 2. Support policy (state in README)
 
-- Status label: **Beta** until v1.0.
-- Typical response time to issues: write the real number you can keep.
-- Not supported: legal/tax advice, custom skills for individual clients (could be a paid service).
+- Status label: **v1.0.0 (Official Release)**.
+- Typical response time to issues: 48 business hours SLA.
+- Not supported: legal/tax certifications, custom skills for individual private projects.
+- Maintainer: Arden Pratama Maskuri.
 
 ## 3. Triage
 
 - Labels: `bug`, `weak-result`, `new-skill`, `docs`, `question`, `good-first-issue`.
-- Weak-result reports become test cases in `TESTING-EVAL.md`.
+- Weak-result reports become test cases in `TESTING-EVAL.md` and `docs/tests/`.
 - Close stale questions politely after asking for details.
 
-## 4. Automation (optional, low effort)
+## 4. Automation
 
-- A CI check that validates frontmatter (name matches folder, description present) and line-count limits.
-- A check that no file contains obvious secrets or URLs to unknown hosts.
-- Dependabot is unnecessary (no dependencies).
+- Cross-platform CI matrix (`.github/workflows/validate-skills.yml`) on Ubuntu, Windows, and macOS.
+- Validates frontmatter (`name`, `version`, `description`), semver format, line-count limits (<250 lines), secret leaks, and placeholder integrity.
+- Full verification suite (`scripts/verify-all.js`) checking relative links, referenced files, and `.skill` zip integrity.
 
-## 5. Keeping scope small
+## 5. Keeping scope focused
 
-- Add a new skill only when it meets a real, repeated need and you can test it.
-- Prefer improving the three core skills over adding many shallow ones.
+- Add a new skill only when it meets a real, repeated business need and you can test it thoroughly.
+- Prefer improving the five core skills (`client-brief`, `quote-builder`, `launch-checklist`, `handover`, `product-page`) over adding many shallow ones.
 - Park risky topics (contracts, tax) unless reviewed by a professional.
 
 ## 6. If you can't maintain it

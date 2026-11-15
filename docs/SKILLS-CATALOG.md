@@ -4,7 +4,7 @@ Specification of each skill: purpose, triggers, inputs, outputs, boundaries.
 
 ---
 
-## 1. `client-brief` (v0.1)
+## 1. `client-brief` (v1.0.0)
 
 **Purpose:** Turn unstructured client communication into a usable brief and a list of questions, so work and quotes start from facts.
 
@@ -32,7 +32,7 @@ Specification of each skill: purpose, triggers, inputs, outputs, boundaries.
 
 ---
 
-## 2. `quote-builder` (v0.1)
+## 2. `quote-builder` (v1.0.0)
 
 **Purpose:** Produce a clear, honest quote/proposal from a brief and the user's own rates.
 
@@ -61,7 +61,7 @@ Specification of each skill: purpose, triggers, inputs, outputs, boundaries.
 
 ---
 
-## 3. `launch-checklist` (v0.1)
+## 3. `launch-checklist` (v1.0.0)
 
 **Purpose:** Create a tailored pre-launch checklist so nothing important is forgotten.
 
@@ -89,13 +89,66 @@ Specification of each skill: purpose, triggers, inputs, outputs, boundaries.
 
 ---
 
-## 4. `handover` (planned)
+## 4. `handover` (v1.0.0)
 
-Project handover: deliverables list, access transfer, credentials hygiene (never write secrets in docs), documentation, maintenance/support terms (as the user defines), final acceptance checklist.
+**Purpose:** Produce a clear, professional project handover document for completed client work, covering asset transfers, credential hygiene, hosting links, maintenance boundaries, and formal sign-off.
 
-## 5. `product-page` (planned)
+**Triggers:** "serah terima proyek", "bikin handover", "project handover", "handover checklist", "klien minta serah terima", "deliver project to client", "BAST proyek".
 
-Honest product page: what's inside, who it's for, what it does not do, compatibility, license summary (as the user defines), FAQ, refund note (as the user defines). No fake testimonials or counters.
+**Inputs:** project name, client name, list of delivered assets (repo, design, domain, accounts), warranty duration, hosting/access URLs.
+
+**Outputs**
+1. **Header & metadata:** project title, parties involved, handover date, production URL.
+2. **Deliverables checklist:** source code, design files, database dump, credentials summary, documentation.
+3. **Credential transfer & hygiene:** secure sharing instructions (1Password/Bitwarden); explicit warning against plain-text passwords; credential rotation reminders.
+4. **Operational guide & key links:** production site, CMS admin, server console, uptime monitors.
+5. **Support & warranty terms:** clearly bounded bugfix window (e.g. 14–30 days for agreed scope); strict exclusion of out-of-scope new features.
+6. **Sign-off block:** acceptance signature lines and draft legal note.
+
+**Must**
+- Enforce strict credential hygiene: use `[ISI: ...]` placeholders or encrypted vault sharing; never print plain-text secrets.
+- Establish unambiguous warranty boundaries separating agreed-scope bugfixes from paid change requests.
+- Add "draft document, not a certified legal liability waiver" note.
+
+**Must not**
+- Output or ask for cleartext root passwords, private keys, or API secrets.
+- Provide legal certification of intellectual property transfer.
+- Promise unlimited perpetual maintenance unless explicitly directed.
+
+**Acceptance tests:** HO-1…HO-5.
+
+---
+
+## 5. `product-page` (v1.0.0)
+
+**Purpose:** Draft honest, high-converting copywriting and architecture for digital product landing pages (SaaS, templates, courses, assets, productized services).
+
+**Triggers:** "bikin landing page produk", "copywriting produk digital", "product page draft", "bikin deskripsi produk jualan", "write product page", "landing page template".
+
+**Inputs:** product name, category, target audience, key problem solved, features, technical prerequisites, pricing, refund terms.
+
+**Outputs**
+1. **Hero section:** outcome-driven headline, subheadline, clear primary CTA.
+2. **The problem:** 2–3 concrete friction points experienced by target buyers.
+3. **What's included:** exact deliverables and modules.
+4. **Features & practical value table:** connects technical capability to real-world workflow benefit.
+5. **Prerequisites & compatibility:** software versions, hosting requirements, skill prerequisites.
+6. **Who this is for / NOT for:** qualification criteria and honest anti-personas to cut bad reviews and refunds.
+7. **Transparent pricing table:** user-defined pricing only (or `[ISI: Rp ...]` placeholders).
+8. **Objection-handling FAQ:** 5–7 honest answers addressing real buyer hesitation without hype.
+9. **Refund & support policy draft:** transparent terms for digital asset purchases.
+
+**Must**
+- Disqualify non-ideal buyers upfront (who this is NOT for).
+- State technical prerequisites clearly before purchase buttons.
+- Base pricing strictly on user input or placeholders.
+
+**Must not**
+- Invent fake testimonials, fabricated review scores (e.g. "4.9/5 stars"), or fake user counts.
+- Invent arbitrary discounts, fake scarcity, or countdown timers.
+- Provide guaranteed financial return or get-rich-quick claims.
+
+**Acceptance tests:** PP-1…PP-5.
 
 ---
 
