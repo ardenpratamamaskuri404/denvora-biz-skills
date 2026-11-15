@@ -108,3 +108,7 @@ Supported on Antigravity, Claude, ChatGPT, and Cursor.
 ## How to Use
 
 Natural language prompts in English and Indonesian.
+
+# Dokumentasi Bahasa Indonesia
+
+Panduan lengkap dalam bahasa Indonesia.
