@@ -1,5 +1,6 @@
 ---
 name: quote-builder
+version: 0.1.0
 description: Builds a clear, honest project quote or proposal (scope, deliverables, timeline, price breakdown, payment terms, revisions, exclusions) from a brief and the user's own rates. Use when the user wants to "bikin penawaran", "quotation", "proposal", "RAB", "estimasi harga", "quote for a client", price a project, or turn a brief into an offer. Never invents prices or tax rates; it uses the user's numbers or marked placeholders. Not for general questions about what a quote is.
 ---
 
