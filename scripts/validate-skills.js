@@ -73,12 +73,16 @@ skillFolders.forEach(folder => {
   const frontmatterLines = frontmatterText.split('\n');
 
   let nameVal = null;
+  let versionVal = null;
   let hasDescription = false;
 
   for (const line of frontmatterLines) {
     const trimmed = line.trim();
     if (trimmed.startsWith('name:')) {
       nameVal = trimmed.replace('name:', '').trim().replace(/^['"]|['"]$/g, '');
+    }
+    if (trimmed.startsWith('version:')) {
+      versionVal = trimmed.replace('version:', '').trim().replace(/^['"]|['"]$/g, '');
     }
     if (trimmed.startsWith('description:')) {
       hasDescription = true;
@@ -96,6 +100,15 @@ skillFolders.forEach(folder => {
     } else {
       success(`skills/${folder} valid name (${nameVal})`);
     }
+  }
+
+  // Version check
+  if (!versionVal) {
+    error(`skills/${folder}/SKILL.md missing 'version' in frontmatter`);
+  } else if (!/^\d+\.\d+\.\d+$/.test(versionVal)) {
+    error(`skills/${folder}/SKILL.md version '${versionVal}' is not valid semver (e.g. 1.0.0)`);
+  } else {
+    success(`skills/${folder} valid version (${versionVal})`);
   }
 
   // Description check
@@ -134,12 +147,10 @@ function scanDirectory(dir) {
           }
         }
 
-        // Check unresolved USERNAME placeholder in active guides
+        // Check unresolved USERNAME placeholder in active guides and markdown files
         const relPath = path.relative(ROOT_DIR, fullPath).replace(/\\/g, '/');
-        if (relPath === 'README.md') {
-          if (fileContent.includes('USERNAME/')) {
-            error(`Unresolved placeholder 'USERNAME/' found in ${relPath}`);
-          }
+        if (ext === '.md' && fileContent.includes('USERNAME/') && !relPath.includes('AUDIT.md')) {
+          error(`Unresolved placeholder 'USERNAME/' found in ${relPath}`);
         }
       }
     }

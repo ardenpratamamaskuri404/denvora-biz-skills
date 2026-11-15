@@ -107,10 +107,22 @@ skillDirs.forEach(skill => {
     if (size < 500) throw new Error(`Suspiciously small package size: ${size} bytes`);
   });
 
-  // Test extraction with tar/powershell to inspect layout
+  // Test extraction with pure Node.js to inspect layout cross-platform (Linux/macOS/Windows)
   check(`Package dist/${skill}.skill contains valid zip structure and SKILL.md`, () => {
-    const inspectCmd = `powershell -NoProfile -Command "Add-Type -AssemblyName System.IO.Compression.FileSystem; [System.IO.Compression.ZipFile]::OpenRead('${pkgPath.replace(/\\/g, '\\\\')}').Entries | Select-Object -ExpandProperty FullName"`;
-    const entries = execSync(inspectCmd, { encoding: 'utf8' }).trim().split(/\r?\n/).map(s => s.trim()).filter(Boolean);
+    const buf = fs.readFileSync(pkgPath);
+    let i = 0;
+    const entries = [];
+    while (i < buf.length - 4) {
+      if (buf[i] === 0x50 && buf[i+1] === 0x4B && buf[i+2] === 0x03 && buf[i+3] === 0x04) {
+        const fnLen = buf.readUInt16LE(i + 26);
+        const extraLen = buf.readUInt16LE(i + 28);
+        const fn = buf.toString('utf8', i + 30, i + 30 + fnLen);
+        entries.push(fn);
+        i += 30 + fnLen + extraLen;
+      } else {
+        i++;
+      }
+    }
     
     // Check that SKILL.md is inside the package
     const hasSkillMd = entries.some(e => e === 'SKILL.md' || e.endsWith('/SKILL.md') || e.endsWith('\\SKILL.md'));
