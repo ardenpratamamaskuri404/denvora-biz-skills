@@ -100,3 +100,7 @@ MIT.
 ## Safety Architecture
 
 Zero invented prices, prompt injection isolation, and safe draft boundaries.
+
+## Compatibility & Installation
+
+Supported on Antigravity, Claude, ChatGPT, and Cursor.
