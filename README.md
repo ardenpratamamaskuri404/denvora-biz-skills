@@ -23,6 +23,10 @@ These skills give your AI assistant clear working habits for business tasks: **a
 ## Skills
 
 <p align="center">
+  <img src="assets/product-overview.png" alt="Product Overview" width="800" />
+</p>
+
+<p align="center">
   <img src="assets/workflow-lifecycle.png" alt="Workflow Lifecycle" width="800" />
 </p>
 
