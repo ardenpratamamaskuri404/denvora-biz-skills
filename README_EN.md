@@ -222,4 +222,28 @@ denvora-biz-skills/
 
 ## License
 
-This project is licensed under the open-source [MIT License](LICENSE). Free for personal freelance projects and commercial agency operations.
+Distributed and protected under the legal terms of the **[MIT License](LICENSE)**.
+
+```text
+MIT License
+
+Copyright (c) 2026 Arden Pratama Maskuri
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+```
+
+- **Copyright:** Copyright &copy; 2026 [Arden Pratama Maskuri](https://github.com/ardenpratamamaskuri404).
+- **Personal & Commercial Freedom:** Fully open and free to use for personal freelance work, client deliverables, and commercial digital agency operations without royalty fees.
+- **Modification & Redistribution:** You are welcome to adapt prompt templates, extend workflows, and redistribute them, provided the original copyright notice is retained.
+- **Warranty Disclaimer:** The software is provided *"as is"*, without warranty of any kind, express or implied.
+
+For the full legal text, refer to the official [`LICENSE`](LICENSE) file.
+

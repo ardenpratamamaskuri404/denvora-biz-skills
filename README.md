@@ -222,4 +222,23 @@ denvora-biz-skills/
 
 ## Lisensi
 
-Proyek ini dilindungi oleh lisensi terbuka [MIT](LICENSE). Bebas digunakan, dimodifikasi, dan didistribusikan untuk kebutuhan kerja pribadi maupun komersial agensi Anda.
+Didistribusikan dan dilindungi di bawah ketentuan hukum **[Lisensi MIT](LICENSE)**.
+
+```text
+MIT License
+
+Copyright (c) 2026 Arden Pratama Maskuri
+
+Izin diberikan secara cuma-cuma kepada siapa pun yang memperoleh salinan
+perangkat lunak ini dan file dokumentasi terkait untuk menggunakannya
+tanpa batasan, termasuk hak untuk menggunakan, menyalin, memodifikasi,
+menggabungkan, menerbitkan, mendistribusikan, dan/atau menjual salinannya.
+```
+
+- **Hak Cipta:** Copyright &copy; 2026 [Arden Pratama Maskuri](https://github.com/ardenpratamamaskuri404).
+- **Penggunaan Bebas:** Bebas digunakan untuk keperluan freelance pribadi, proyek komersial klien, maupun operasional agensi digital tanpa biaya royalti.
+- **Modifikasi & Redistribusi:** Anda dipersilakan mengadaptasi template prompt, menyesuaikan alur kerja, dan mendistribusikannya kembali dengan tetap menyertakan atribusi hak cipta asli.
+- **Klausul Penafian (*Disclaimer*):** Perangkat lunak ini disediakan *"sebagaimana adanya"* (*as-is*), tanpa jaminan apa pun baik tersurat maupun tersirat.
+
+Untuk membaca naskah hukum lisensi resmi selengkapnya, silakan buka berkas [`LICENSE`](LICENSE).
+
